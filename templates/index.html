@@ -1,0 +1,294 @@
+
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<!--font-family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<!-- title of site -->
+	<title>Projet CROCOS</title>
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="../static/logo/favicon.png"/>
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+	<!--linear icon css-->
+	<link rel="stylesheet" href="../static/css/linearicons.css">
+	<!--animate.css-->
+	<link rel="stylesheet" href="../static/css/animate.css">
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="../static/css/flaticon.css">
+	<!--slick.css-->
+	<link rel="stylesheet" href="../static/css/slick.css">
+	<link rel="stylesheet" href="../static/css/slick-theme.css">
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="../static/css/bootsnav.css" >	
+	<!--style.css-->
+	<link rel="stylesheet" href="../static/css/style.css">
+	<!--responsive.css-->
+	<link rel="stylesheet" href="../static/css/responsive.css">
+
+		
+
+</head>
+<body>
+	<header>
+		{% block header %}
+		<div class="header-area">
+			<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a href="../index/">
+							<br>
+							<img src="../static/images/logo/logo_crocus.png" alt="Photo logo" class="logo-header"/>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li >
+								<a href="../index/">Accueil</a>
+							</li>
+							<li >
+								<a href="../index#introduction">Notre Projets</a>
+							</li>
+							<li>
+								<a href="../index#notre_client">Partenaires</a>
+							</li>
+							<li>
+								<a href="../index#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section id="home" class="welcome-hero">
+				<div class="container"></div>
+			</section>
+		</div>
+
+		{% endblock %}
+	</header>
+	{% block bodyContent %}
+	<section id="introduction" class="blog">
+		<div class="container">
+			<div class="section-header">
+				<h2>Présentation du projet CROCUS</h2>
+			</div>
+			<div class="col-12 tm-media tm-media-v-center">
+                <div>
+                    <p style="text-align:justify"> &nbsp;&nbsp; L’objectif du projet CROCUS est le développement d’un micro-laboratoire d’analyse in situ de la corrosion pouvant être mis en ligne avec des procédés de synthèse de matériaux ou revêtements anticorrosion, également haut débit, tels que ceux mis en oeuvre sur la plateforme de PECVD (plasma enhanced chemical vapor deposition) atmosphérique en cours d’investissement dans le cadre du projet A-DREAM, la plateforme de PVD (physical vapor deposition) combinatoire mise en oeuvre dans le projet ciblé HIWAY-2-MAT ou la plateforme développée à l’INSTN (institut national des sciences et techniques nucléaires) de Saclay, DIADEM-2D.<br> 
+						&nbsp;&nbsp; A cette fin, une nouvelle plateforme de bibliothèque combinatoire de systèmes de conception/fabrication d’alliages couplée à une analyse électrochimique à haut débit à l’échelle élémentaire sera développée dans le projet. Une nouvelle méthode, la
+						spectroélectrochimie d’émission atomique (AESEC), sera utilisée pour accéder à l’électrochimie résolue par éléments, complémentaire aux mesures électrochimiques conventionnelles. Cette
+						technique permet de tracer chaque élément d’alliage lors de l’activation, de la passivation et de la
+						dégradation du matériau. L’objectif de CROCUS consiste en la mise en œuvre d’une technique
+						d’analyse électrochimique élémentaire couplée à d’autres techniques de mesure in situ permettant
+						l’étude du comportement en corrosion de matériaux/revêtements multiéléments complexes (e.g.,
+						alliages industriels, oxydes complexes).<br>
+
+						&nbsp;&nbsp; Ce projet contribuera à compléter les connaissances existantes sur les réactions de corrosion dans les systèmes multimatériaux fournissant des informations cinétiques in situ et operando à l’échelle élémentaire à l’aide de cette plateforme miniaturisée d’étude de la corrosion. Enfin une nouvelle méthode de découverte accélérée de matériaux anticorrosion sera proposée.</p>
+                </div>
+            </div>
+					<div class="row tm-welcome-row-2">
+						<div class="col-lg-4 tm-dotted-box-container">
+							<article class="tm-dotted-box">
+								<div style="text-align: center;">
+									<h3 class="tm-article-title">conception et fabrication<br> d'alliages</h3>
+									<img src="../static/images/logo/logo_ircp.png" alt="logo">
+									<p class="tm-article-text"><br>Alliages Ni-Cr-M <br>via une approche à haut débit<br> 
+										PVD à double cible <br>matériaux en vrac de prototypage rapide</p>
+								</div>
+							</article>    
+						</div>
+						<div class="col-lg-4 tm-dotted-box-container">
+							<article class="tm-dotted-box">
+								<div style="text-align: center;">
+									<h3 class="tm-article-title">Element-resolved database</h3>
+									<img src="../static/images/logo/logo_lis.png" alt="logo">
+									<p class="tm-article-text"><br>AESEC-SDC (high-throughput)<br>  AESEC-EIS<br> AESEC-EQCM (kinetics)<br>
+										SECM (local measurement)</p>
+								</div>
+							</article>    
+						</div>
+						<div class="col-lg-4 tm-dotted-box-container">
+							<article class="tm-dotted-box">
+								<div style="text-align: center;">
+									<h3 class="tm-article-title">Machine learning approach</h3>
+									<img src="../static/images/logo/logo_cea.png" alt="logo" class="center-image"/>
+									<p class="tm-article-text"><br>numerical simulation:<br>&nbsp;-ML <br>&nbsp;-symbolic AI (ExpressIF®)<br>
+										&nbsp;-CALPHAD<br>  Non-aqueous electrochemistry<br>  Scale-up analysis</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+	</section>	
+	<section id="fun-facts" class="work">
+		<div class="container">
+	   		<div class="counter-row row text-center wow fadeInUp">
+		  		<div class="col-md-3 col-sm-6 fact-container">
+					<div class="fact">
+						<h2 class="counter highlight">0</h2>
+						<h4>Laboratoires engagés</h4>
+					</div>
+		  		</div>
+				<div class="col-md-3 col-sm-6 fact-container">
+					<div class="fact">
+						<h2 class="counter highlight">0</h2>
+						<h4>Chercheurs permanents engagés</h4>
+					</div>
+				</div>
+		  		<div class="col-md-3 col-sm-6 fact-container">
+					<div class="fact">
+						<h2 class="counter highlight">0</h2>
+						<h4>Postdoctorants et doctorants</h4>
+			 		</div>
+		  		</div>
+		  		<div class="col-md-3 col-sm-6 fact-container">
+			 		<div class="fact">
+						<h2 class="counter highlight">0</h2>
+						<h4>Publications</h4>
+			 		</div>
+		  		</div>
+	   		</div>
+		</div>
+ 	</section>
+ <!-- partenaires -->
+	<section id="notre_client" class="blog">
+		<div class="container">
+			<div class="section-header">
+				<h2>Partenaires</h2>
+			</div>
+			<div class="content-client">
+				<div>
+					<a href="https://www.elysee.fr/emmanuel-macron/france2030">
+						<img src="../static/images/logo/logo_france.png" alt="logo projet" />
+					</a>
+				</div>
+				<div>
+					<a href="https://anr.fr/">
+						<img src="../static/images/logo/logo_anrn.png"  alt="logo anr" />
+					</a>
+				</div>
+				<div>
+					<a href="https://www.cnrs.fr/">
+						<img src="../static/images/logo/logo_cnrs.png" alt="logo cnrs" />
+					</a>
+				</div>
+				<div>
+					<a href="https://www.sorbonne-universite.fr/">
+						<img src="../static/images/logo/logo_sorbonn.png" alt="logo sorbonne" />
+					</a>
+				</div>
+				<div>
+					<a href="https://lise-www.sorbonne-universite.fr/">
+						<img src="../static/images/logo/logo_lis.png" alt="logo lise" />
+					</a>
+				</div>
+				<div>
+					<a href="https://cea.fr/">
+						<img src="../static/images/logo/logo_cea.png" alt="logo cea" />
+					</a>
+				</div>
+				<div>
+					<a href="https://www.chimieparistech.psl.eu/recherche/les-laboratoires/ircp/">
+						<img src="../static/images/logo/logo_ircp.png" alt="logo ircp" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="blog">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="section-header">
+					<h2><br><br><br>NOUS CONTACT</h2>
+				<div class="row tm-welcome-row-2">
+					<div class="contact-container">
+        				<div class="contact-info">
+							<h3>TEAM CROCOS</h3>
+							<br>
+           					<h3>Address</h3>
+            				<p>"3ème étage, Tour 13-14<br> place Jussieu<br> 75005 Paris, France</p>
+							<br>
+            				<h3>Contact</h3>
+            				<p>Email: junsoo.han@sorbonne-universite.fr<br>
+               					Phone: +33 </p>
+        				</div>
+					</div>
+        			<div class="map-container">
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDKJ1optwgQVXlabjL-FfyBAig-yFdT2s&callback=initMap"></script>
+						<style>
+							#map {
+								height: 400px;
+								width: 400px;
+							}
+						</style>
+						<div id="map"></div>
+						<script>
+							function initMap() {
+								var map = new google.maps.Map(document.getElementById('map'), {
+									center: { lat: 48.8462, lng: 2.35462 },
+									zoom: 14}); 
+								var marker1 = new google.maps.Marker({
+                					map: map,
+                					position: { lat:  48.8467, lng: 2.35522}, icon: "../static/images/map/marker2.png", title: 'WORK'});
+							}
+						</script>
+						<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDKJ1optwgQVXlabjL-FfyBAig-yFdT2s&callback=initMap">
+						</script>
+        			</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% endblock %}
+	<footer>
+		{% block footer %}
+		<div class="container">
+			<div class="footer-menu">
+			<div class="hm-footer-copyright">
+				<div class="row">
+					<div class="col-sm-5 text-center">
+						<p>
+							&copy;copyright. designed and developed by Projet CROCOS <br> 
+							
+						</p>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+		</div> 
+		{% endblock %}
+	</footer>
+	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+	<script src="../static/js/jquery.js"></script>
+	<!--modernizr.min.js-->
+	<script src="../https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!--bootstrap.min.js-->
+	<script src="../static/js/bootstrap.min.js"></script>
+	<!-- bootsnav js -->
+	<script src="../static/js/bootsnav.js"></script>
+	<!--feather.min.js-->
+	<script  src="../static/js/feather.min.js"></script>
+	<!--slick.min.js-->
+	<script src="../static/js/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<!--Custom JS-->
+	<script src="../static/js/custom.js"></script>
+</body>
+</html>
