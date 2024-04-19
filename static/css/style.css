@@ -196,7 +196,7 @@ nav.navbar.bootsnav {
 }
 .navbar-header a.navbar-brand span {
     display: inline-block;
-    color:#ff545a;
+    color:#D78893;
     text-transform:capitalize;
 }
 
@@ -216,8 +216,8 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding:34px 21px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav {color: #ff545a;}
-nav.navbar.bootsnav ul.nav > li.active>a {color: #ff545a;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav {color: #D78893;}
+nav.navbar.bootsnav ul.nav > li.active>a {color: #D78893;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -238,7 +238,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #ff545a;
+  background-color: #D78893;
 }
 /*.menu-ui-design*/
 
@@ -250,7 +250,7 @@ nav.navbar.bootsnav .navbar-toggle {
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
+nav.navbar.bootsnav .navbar-toggle i{color: #D78893;}
 /*.navbar-toggle */
 
 /*-------------------------------------
@@ -258,7 +258,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/background2.png)no-repeat;
+    background:url(../images/welcome-hero/background.png)no-repeat;
     background-position:center;
     background-size:cover;
     text-align: center;
@@ -584,8 +584,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-size: 20px;
     cursor: pointer;
     color: #fff;
-    background:#181381;
-	border:1px solid #181381;
+    background:#D78893;
+	border:1px solid #D78893;
 	border-radius:50%;
 	-webkit-transition: .5s; 
 	-moz-transition:.5s; 
@@ -595,8 +595,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 	z-index: 2;
 }
 #scroll-Top  .return-to-top:hover {
-    background:#181381;
-	border:1px solid #181381;
+    background:#D78893;
+	border:1px solid #D78893;
 }
 
 #scroll-Top  .return-to-top i{
