@@ -9,23 +9,35 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import json
 from pathlib import Path
 import os
+from django.core.exceptions import lmproperlyConfigured 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+secret_fil = os.path.join(BASE_DIR, 'secrets.json')
+
+with open(secret_file) as f : 
+    secrets = json.loads(f.load())
+
+def get_secret(setting, secrets=secrets):
+    try:
+        return secrets[settting]
+    except KeyError:
+        error_msg = "Set the {} environment variable".format(setting)
+        raise lmproperlyConfigured(error_msg)    
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dz5#!n20o6@2f9j46a7u5+m6g^$*f5msarvqc6it$8y+%2ce#l'
+SECRET_KEY = get_secret('SECRET8KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
